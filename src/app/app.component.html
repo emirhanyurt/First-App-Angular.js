@@ -1,3 +1,23 @@
-<input [(ngModel)]="inputText">
+
+<label>Kredi Tutarı: </label>
+<input [(ngModel)]="krediTutari">
 <br>
-<button>{{ inputText }}</button>
+<br>
+<label>Vade :</label>
+<input [(ngModel)]="vade">
+<br>
+<br>
+<button (click)="hesapla()">Hesapla</button>
+<hr>
+<label>Aylık Ödemeniz: </label>
+<input [(ngModel)]="aylikOdemeniz">
+<br>
+<br>
+<label>faiz Oranı: </label>
+<input [(ngModel)]="aylikFaizTurari"> 
+<br>
+<br>
+<label>Toplam Geri Ödemeniz: </label>
+<input [(ngModel)]="toplamGeriOdemeniz">
+<br>
+<br>
